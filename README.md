@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍰 ScanCake
 
-## Getting Started
+> **Cute outside. Security underneath.**
 
-First, run the development server:
+ScanCake adalah project yang sedang dikembangkan untuk membuat **platform web security reconnaissance** yang mengintegrasikan berbagai security tools dalam satu antarmuka.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Project ini dibuat untuk mengeksplorasi bagaimana berbagai command-line security tools dapat diintegrasikan ke dalam workflow yang lebih terstruktur dan mudah digunakan.
+
+## 🎯 Tujuan
+
+ScanCake ingin menyediakan satu workspace untuk melakukan berbagai aktivitas reconnaissance tanpa harus berpindah-pindah antarmuka.
+
+Konsep yang ingin dibangun:
+
+**Discover → Understand → Secure**
+
+## 🔎 Reconnaissance Toolkit
+
+Rencana tools yang akan diintegrasikan:
+
+| Tools         | Fokus                       | Status          |
+| ------------- | --------------------------- | --------------- |
+| **WhatWeb**   | Technology Fingerprinting   | 🟢 Dikembangkan |
+| **httpx**     | HTTP Probing                | 🟡 Direncanakan |
+| **Subfinder** | Subdomain Discovery         | 🟡 Direncanakan |
+| **Nmap**      | Network & Service Discovery | 🟡 Direncanakan |
+| **ffuf**      | Web Content Discovery       | 🟡 Direncanakan |
+
+> Status fitur dapat berubah selama proses pengembangan.
+
+## ✨ Saat Ini
+
+Pengembangan ScanCake dimulai dari integrasi **WhatWeb** sebagai security reconnaissance engine.
+
+Fitur yang sedang dikembangkan meliputi:
+
+* Antarmuka web untuk menjalankan WhatWeb
+* Technology fingerprinting
+* Tampilan hasil scan yang terstruktur
+* Riwayat hasil scanning
+* Pemisahan engine berdasarkan fungsi
+
+Engine lainnya akan ditambahkan secara bertahap.
+
+## 🏗️ Rencana Pengembangan
+
+```text
+ScanCake
+│
+├── WhatWeb
+│   └── Technology Fingerprinting
+│
+├── httpx
+│   └── HTTP Probing
+│
+├── Subfinder
+│   └── Subdomain Discovery
+│
+├── Nmap
+│   └── Network Discovery
+│
+├── ffuf
+│   └── Content Discovery
+│
+└── History
+    └── Unified Scan History
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Teknologi
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Saat ini ScanCake menggunakan teknologi seperti:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Next.js
+* TypeScript
+* Tailwind CSS
+* WhatWeb
 
-## Learn More
+Teknologi dan security tools lainnya akan ditambahkan sesuai perkembangan project.
 
-To learn more about Next.js, take a look at the following resources:
+## 📚 Tentang Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+ScanCake merupakan project pembelajaran dan pengembangan yang berfokus pada:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Security reconnaissance
+* Web security
+* Integrasi command-line tools
+* API dan backend process execution
+* Result parsing
+* Web interface development
+* Security tooling workflow
 
-## Deploy on Vercel
+ScanCake **bukan pengganti dari tools yang diintegrasikan**, tetapi merupakan antarmuka dan integration layer untuk membantu mengorganisasi penggunaannya.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⚠️ Penggunaan Bertanggung Jawab
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+ScanCake ditujukan untuk pembelajaran, penelitian keamanan, dan pengujian yang memiliki izin.
+
+Gunakan tools hanya terhadap sistem, website, jaringan, atau aplikasi yang kamu miliki atau memiliki izin untuk mengujinya.
+
+## 🚧 Status
+
+**Work in Progress**
+
+ScanCake masih dalam tahap pengembangan dan belum seluruh fitur yang direncanakan tersedia.
+
+---
+
+🍰 **ScanCake — Cute outside. Security underneath.**
